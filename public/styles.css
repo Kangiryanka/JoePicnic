@@ -1,0 +1,233 @@
+/* Basic HTML elements */
+
+body {
+    background-color: #fcfcfc;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
+    font-family: 'Permanent Marker', cursive;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+h1{
+  
+    margin: 10px;
+}
+h2,
+h3 {
+
+    text-align: center;
+}
+
+h2 {
+    padding: 10px 20px 0 20px;
+}
+
+
+
+li {
+   
+    font-family: 'Permanent Marker', cursive;
+    list-style: none;
+    font-size: 25px;
+    width: 100%;
+    
+
+
+}
+
+ul {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+
+/* Classes */
+#mainContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.picnicHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #c4915b;
+}
+
+
+
+.itemBox {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    margin: 5% 0 5% 0;
+
+
+}
+
+
+
+.actionBox {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+}
+
+.theRuleNumber {
+  
+    animation-name: fade;
+    animation-duration: 1s;
+  
+    
+}
+
+
+.descriptionBox {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+
+}
+
+.theDescription {
+    padding: 10px;
+    box-shadow: #c4915b 0px 18px 50px -10px;
+    animation-name: growLetters;
+    animation-duration: 0.8s;
+  
+    
+}
+
+
+.allowedItems {
+
+    height: 100%;
+    box-shadow: rgba(199, 88, 13, 0.493) 0px 1px 9px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-color: #c4915b;
+    overflow-x: auto;
+    overflow-y: auto;
+
+
+}
+
+.allowedList li {
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+}
+
+.forbiddenList li {
+animation-name: slideInFromRight;
+animation-duration: 2s;
+
+}
+
+.forbiddenItems {
+
+    height: 100%;
+    box-shadow: rgba(199, 88, 13, 0.493) 0px 1px 9px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-color: #c4915b;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+
+
+}
+
+
+.formBox {
+    position: absolute;
+    bottom: 15%;
+    height: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+
+}
+
+.bounceLetters:hover {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+}
+
+
+
+/* Animations */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+    20% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes growLetters {
+    0% {
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+
+}
+
+
+@keyframes fade{
+
+    0%{
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce{
+
+    0% {
+        transform: translateY(-5px)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        translateY: translateY(5px);
+    }
+}
