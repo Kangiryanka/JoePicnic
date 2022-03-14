@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Joe's Selfishness
+
+Joe's Picnic has many rules, Joe wants you to  bring the items (anything really) that matches his rules.
+
+### Instructions 
+1. Input an item/word
+2. If that item matches with the rule, then it is sent to the allowed items, otherwise it will be sent to the forbidden items
+3. Once you've figured out the rule, you can show the rule
+
+### Buttons
+! The empty icon only empties the forbidden Items
+! Changing the rule wipes out the state clean
+
