@@ -79,6 +79,6 @@ Joe's Picnic has many rules, Joe wants you to  bring the items (anything really)
 3. Once you've figured out the rule, you can see the rule by clicking "Show rule".
 
 ### Buttons
-! The empty icon only empties the forbidden Items.
-! Changing the rule wipes out the state clean.
+1. The empty icon only empties the forbidden Items.
+2. Changing the rule wipes out the state clean.
 
